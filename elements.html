@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Floating Facts</title>
+	<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">  
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>  
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
+	<style>
+		body{
+			
+			background-color: lightgray;
+		}
+		.container{
+			background:white;
+			margin:none;
+			width: 100%;
+			height: 150%;
+
+
+		}
+		h1{
+			padding-left: 20px;
+			color:black;
+			font-size: 50px;
+
+		}
+		section{
+			margin-left: 20px;
+			width:250px;
+			height:500px;
+			border-radius: 20px;
+			float: left bottom;
+			box-shadow: 5px 10px #888888;
+			margin: 30px;
+			float: left;
+		}
+		
+		#s1{
+			background-color: orange;
+			font-size: 20px;
+			padding: 10px;
+
+
+		}
+		li{
+			padding: 10px;
+			color: black;
+			font-weight: bold;
+			font-family: 
+		}
+		#s2{
+			background-color: white;
+			font-size: 20px;
+			padding: 10px;
+
+		}
+		#s3{
+			background-color: orange;
+			font-size: 20px;
+			padding: 10px;
+		}
+		#s4{
+			background-color: white;
+			font-size: 20px;
+			padding: 10px;
+
+		}
+
+	</style>
+	<script>  
+         $(document).ready(function() {  
+            $('s1').click(function() {  
+               $( "s1" ).effect( "shake", {  
+                  times: 10,  
+                  distance: 150  
+               }, 3000, function() {  
+               $( this ).css( "background", "#ff4040" );  
+            });  
+         });  
+      });  
+</script>  
+</head>
+<body>
+	<nav class="container">
+	<h1>Floating Facts</h1>
+</nav>
+	<div>
+		<section id="s1">
+			<p>
+				<li>The First Computer Weighed More Than 27 Tons</li>
+				<li>About 90% of the World’s Currency Only Exists on Computers</li>
+				<li>The First Computer Mouse was Made of Wood</li>
+				<li>About 70% of Virus Engineers Work for Organized Crime Syndicates</li>
+				<li>About 90% of the World’s Currency Only Exists on Computers</li>
+			</p>
+			
+	    </section>
+	    <section id="s2">
+		    <p>
+				<li>Some of the Biggest Computer Brands Started in Garages</li>
+				<li>People Blink Less When They Use Computers</li>
+				<li>Hackers Write About 6,000 New Viruses Each Month</li>
+				<li> More Than 80% of Daily Emails in the U.S. are Spam</li>
+				<li> MyDoom is the Most Expensive Computer Virus in History</li>
+			</p>
+		</section>
+		<section id="s3">
+		    <p>
+				<li>The Parts for the Modern Computer Were First Invented in 1833</li>
+				<li>A Single Computer Catches 50% of all Wikipedia Vandalism</li>
+				<li>Computers Sort 95% of Mail</li>
+				<li> More Than 80% of Daily Emails in the U.S. are Spam</li>
+				<li>Computers Sort 95% of Mail</li>
+			</p>
+		</section>
+		<section id="s4">
+		    <p>
+				<li>Computers Might Soon be Able to Tell What Dogs Think</li>
+				<li>Disney Fired John Lasseter for Pushing Computer Animation</li>
+				<li>Disney Fired John Lasseter for Pushing Computer Animation</li>
+				<li>There are more than 5000 new computer viruses released every month.</li>
+				<li>The original name of windows was Interface Manager.</li>
+			</p>
+		</section>
+		
+	</div>
+</body>
+</html>
